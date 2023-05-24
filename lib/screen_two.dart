@@ -14,11 +14,10 @@ class ScreenTwo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    width: 50,
-                    height: 50,
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       boxShadow: const [
                         BoxShadow(
@@ -66,8 +65,7 @@ class ScreenTwo extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 50,
-                    height: 50,
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(boxShadow: const [
                       BoxShadow(
                         color: Colors.white,
@@ -108,8 +106,7 @@ class ScreenTwo extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        width: 50,
-                        height: 50,
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           boxShadow: const [
                             BoxShadow(
@@ -153,8 +150,7 @@ class ScreenTwo extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        width: 50,
-                        height: 50,
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           boxShadow: const [
                             BoxShadow(
@@ -182,11 +178,10 @@ class ScreenTwo extends StatelessWidget {
                     height: 12,
                   ),
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    padding: const EdgeInsets.only(top: 8, bottom: 8),
                     decoration: BoxDecoration(
-                        color: Colors.blue[200],
-                        borderRadius: BorderRadius.circular(16)),
+                        color: Colors.blue[100],
+                        borderRadius: BorderRadius.circular(12)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -206,27 +201,26 @@ class ScreenTwo extends StatelessWidget {
                           ],
                         ),
                         Container(
-                          width: 50,
-                          height: 50,
+                          padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Colors.white,
-                                offset: Offset(-15, -15),
-                                blurRadius: 20,
-                              ),
-                              BoxShadow(
-                                color: Colors.grey,
-                                offset: Offset(15, 15),
-                                blurRadius: 20,
-                              )
-                            ],
+                            // boxShadow: const [
+                            //   BoxShadow(
+                            //     color: Colors.white,
+                            //     offset: Offset(-15, -15),
+                            //     blurRadius: 20,
+                            //   ),
+                            //   BoxShadow(
+                            //     color: Colors.grey,
+                            //     offset: Offset(15, 15),
+                            //     blurRadius: 20,
+                            //   )
+                            // ],
                             color: Colors.blue[300],
                             shape: BoxShape.circle,
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.stop,
-                            color: Colors.grey,
+                            color: Colors.grey[300],
                           ),
                         ),
                       ],
@@ -254,8 +248,7 @@ class ScreenTwo extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        width: 50,
-                        height: 50,
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           boxShadow: const [
                             BoxShadow(
@@ -301,8 +294,7 @@ class ScreenTwo extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        width: 50,
-                        height: 50,
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           boxShadow: const [
                             BoxShadow(
@@ -357,26 +349,21 @@ class ScreenTwo extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 50,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-15, -15),
-                              blurRadius: 20,
-                              // spreadRadius: 1
-                            ),
-                            BoxShadow(
-                              color: Colors.grey,
-                              offset: Offset(15, 15),
-                              blurRadius: 20,
-                              // spreadRadius: 1
-                            )
-                          ],
-                          color: Colors.blue[300],
-                          
-                          shape: BoxShape.circle),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(boxShadow: const [
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-15, -15),
+                          blurRadius: 20,
+                          // spreadRadius: 1
+                        ),
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(15, 15),
+                          blurRadius: 20,
+                          // spreadRadius: 1
+                        )
+                      ], color: Colors.blue[300], shape: BoxShape.circle),
                       child: const Icon(
                         Icons.pause,
                         color: Colors.white,
