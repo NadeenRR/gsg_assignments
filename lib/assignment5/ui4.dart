@@ -36,7 +36,8 @@ class UI4 extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 8),
                       decoration: const BoxDecoration(
                           color: Color.fromRGBO(1, 22, 103, 1),
                           shape: BoxShape.circle),
@@ -66,12 +67,14 @@ class UI4 extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.only(bottom: 160, top: 150),
+                    margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(42),
                         color: Colors.grey[200]),
                   ),
                   Container(
                     padding: const EdgeInsets.only(bottom: 150, top: 150),
+                    margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(42),
                         color: Colors.grey[300]),
@@ -105,7 +108,7 @@ class UI4 extends StatelessWidget {
                                         const Color.fromARGB(96, 242, 242, 242),
                                     borderRadius: BorderRadius.circular(18)),
                                 child: const Icon(
-                                  Icons.bookmark,
+                                  Icons.bookmark_outlined,
                                   color: Color.fromARGB(200, 242, 242, 242),
                                 ),
                               ),
@@ -147,7 +150,7 @@ class UI4 extends StatelessWidget {
                                 width: 120,
                                 height: 40,
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(80, 255, 255, 255),
+                                  color: const Color.fromARGB(80, 255, 255, 255),
                                   borderRadius: BorderRadius.circular(18),
                                 ),
                                 child: const Center(
@@ -160,14 +163,14 @@ class UI4 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
                               Container(
                                 width: 120,
                                 height: 40,
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(80, 255, 255, 255),
+                                  color: const Color.fromARGB(80, 255, 255, 255),
                                   borderRadius: BorderRadius.circular(18),
                                 ),
                                 child: const Center(
@@ -189,7 +192,7 @@ class UI4 extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 110,
+                height: 80,
               ),
               Container(
                 padding: const EdgeInsets.all(24),

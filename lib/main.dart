@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gsg_assignments/screen_one.dart';
-import 'package:gsg_assignments/screen_two.dart';
-import 'package:gsg_assignments/ui4.dart';
-import 'package:gsg_assignments/ui_3.dart';
+import 'package:gsg_assignments/assignment4/screen_one.dart';
+import 'package:gsg_assignments/assignment4/screen_two.dart';
+
+import 'assignment5/ui4.dart';
+import 'assignment6/game.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const UI4(),
+      home: const GamePage(),
     );
   }
 }

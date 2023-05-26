@@ -51,7 +51,7 @@ class UI3 extends StatelessWidget {
                   padding: const EdgeInsets.only(
                       right: 12, top: 12, bottom: 12, left: 30),
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: Colors.grey.shade300,
                     borderRadius: BorderRadius.circular(24),
                   ),
                   child: Row(
@@ -86,7 +86,8 @@ class UI3 extends StatelessWidget {
                             width: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.white, width: 5),
+                              border: Border.all(
+                                  color: Colors.grey.shade300, width: 5),
                               image: const DecorationImage(
                                 fit: BoxFit.cover,
                                 image: NetworkImage(
@@ -100,7 +101,8 @@ class UI3 extends StatelessWidget {
                             width: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.white, width: 5),
+                              border: Border.all(
+                                  color: Colors.grey.shade300, width: 5),
                               image: const DecorationImage(
                                 fit: BoxFit.cover,
                                 image: NetworkImage(
@@ -114,7 +116,8 @@ class UI3 extends StatelessWidget {
                             width: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.white, width: 5),
+                              border: Border.all(
+                                  color: Colors.grey.shade300, width: 5),
                               image: const DecorationImage(
                                 fit: BoxFit.cover,
                                 image: NetworkImage(
