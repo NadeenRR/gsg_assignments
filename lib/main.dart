@@ -4,6 +4,7 @@ import 'package:gsg_assignments/assignment4/screen_two.dart';
 
 import 'assignment5/ui4.dart';
 import 'assignment6/game.dart';
+import 'assignment6/my_animation.dart';
 
 void main() {
   runApp(const MyApp());

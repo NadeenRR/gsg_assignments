@@ -14,6 +14,7 @@ String score = "";
 int scoreCount = 0;
 int totalScore = 0;
 int tapCount = 0;
+String imageYou = 'assets/images/photo1.png';
 
 class _GamePageState extends State<GamePage> {
   @override
@@ -36,7 +37,7 @@ class _GamePageState extends State<GamePage> {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -57,9 +58,6 @@ class _GamePageState extends State<GamePage> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 16,
-              ),
               Row(
                 children: [
                   Expanded(
@@ -75,7 +73,7 @@ class _GamePageState extends State<GamePage> {
                             print(tapCount);
                           },
                           child: Image.asset(
-                            'assets/images/photo$you.png',
+                            imageYou,
                           ),
                         ),
                         const SizedBox(
@@ -91,18 +89,12 @@ class _GamePageState extends State<GamePage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    width: 8,
-                  ),
                   const Text(
                     'VS',
                     style: TextStyle(
                         color: Colors.yellow,
                         fontSize: 25,
                         fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    width: 8,
                   ),
                   Expanded(
                     child: Column(
@@ -135,6 +127,44 @@ class _GamePageState extends State<GamePage> {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        imageYou = 'assets/images/photo3.png';
+                      });
+                    },
+                    child: const Text(
+                      'Rock',
+                      style: TextStyle(fontSize: 20, color: Colors.yellow),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        imageYou = 'assets/images/photo1.png';
+                      });
+                    },
+                    child: const Text(
+                      'Paper',
+                      style: TextStyle(fontSize: 20, color: Colors.yellow),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        imageYou = 'assets/images/photo2.png';
+                      });
+                    },
+                    child: const Text(
+                      'Scissors',
+                      style: TextStyle(fontSize: 20, color: Colors.yellow),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
